@@ -1,0 +1,107 @@
+body 
+{
+    font-family: 'segoe ui light' ;
+    box-sizing: border-box;
+}
+hr
+{
+    height: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+
+}
+
+.item , .items
+{
+    position: relative;
+    margin-bottom: 25px;
+}
+.item img , .items img
+{
+    cursor: pointer;
+
+}
+.item-caption , .item-captions
+{
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    width: 80%;
+    padding: 8px;
+    background-color: #eee;
+}
+#lightBOxContainer , #lightBOxContainers
+{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#lightBoxItem , #lightBoxItems
+{
+    background-image: url(../images/7.jpg);
+    width: 50%;
+    height: 75vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#close , #prev , #next , #closes , #prevs , #nexts
+{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 20px;
+
+}
+#close , #closes
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+}
+@media (min-width : 500px) and (max-width : 767px)
+{
+    #lightBoxItem
+{
+   width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#lightBoxItems
+{
+   width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+}
+
+@media (min-width : 768px) and (max-width : 992px)
+{
+    #lightBoxItem
+{
+   width: 75%;
+    height: 75vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#lightBoxItems
+{
+   width: 75%;
+    height: 75vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+}
